@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Floats</title>
+    <!--never do this-->
+    <!--floats only work on block level items-->
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background: lightgray;
+        }
+        .container {
+            max-width: 1200px;
+            margin: .5em auto;
+        }
+        .blog-title {
+            font-family: sans-serif;
+            margin-bottom: .5rem;
+            text-decoration: underline;
+            text-align: center;
+            color:darkgray;
+        }
+        .blog-post {
+            border: 1px solid black;
+            border-radius: 10px;
+            width: 30%;
+            margin-right: 2%;
+            float: left;
+            /* float: right; */
+            margin-bottom: 5px;
+            padding: 10px;
+            background: white;
+        }
+        .blog-p {
+            margin-top: .5rem;
+            line-height: 1.5;
+            text-indent: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="blog-post">
+            <h1 class="blog-title">Blog Post 1</h1>
+            <p class="blog-p">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo unde quisquam molestiae eligendi
+                excepturi veniam dolorem accusamus, adipisci explicabo at quasi delectus, fuga odit minima repudiandae
+                rem ut ratione perspiciatis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi odio et dolore. Quas culpa laborum
+                similique commodi saepe adipisci repudiandae quam illo! Labore illum nobis ratione harum tenetur tempore
+                magni.
+               
+            </p>
+            <p class="blog-p">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo unde quisquam molestiae eligendi
+                excepturi veniam dolorem accusamus, adipisci explicabo at quasi delectus, fuga odit minima repudiandae
+                rem ut ratione perspiciatis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi odio et dolore. Quas culpa laborum
+                similique commodi saepe adipisci repudiandae quam illo! Labore illum nobis ratione harum tenetur tempore
+                magni.
+            
+            </p>
+            <p class="blog-p">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo unde quisquam molestiae eligendi
+                excepturi veniam dolorem accusamus, adipisci explicabo at quasi delectus, fuga odit minima repudiandae
+                rem ut ratione perspiciatis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi odio et dolore. Quas culpa laborum
+                similique commodi saepe adipisci repudiandae quam illo! Labore illum nobis ratione harum tenetur tempore
+                magni.
+            
+            </p>
+        </div>
+        <div class="blog-post">
+            <h1 class="blog-title">Blog Post 2</h1>
+            <p class="blog-p">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo unde quisquam molestiae eligendi
+                excepturi veniam dolorem accusamus, adipisci explicabo at quasi delectus, fuga odit minima repudiandae
+                rem ut ratione perspiciatis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi odio et dolore. Quas culpa laborum
+                similique commodi saepe adipisci repudiandae quam illo! Labore illum nobis ratione harum tenetur tempore
+                magni.
+            </p>
+            <p class="blog-p">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo unde quisquam molestiae eligendi
+                excepturi veniam dolorem accusamus, adipisci explicabo at quasi delectus, fuga odit minima repudiandae
+                rem ut ratione perspiciatis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi odio et dolore. Quas culpa laborum
+                similique commodi saepe adipisci repudiandae quam illo! Labore illum nobis ratione harum tenetur tempore
+                magni.
+            </p>
+            <p class="blog-p">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo unde quisquam molestiae eligendi
+                excepturi veniam dolorem accusamus, adipisci explicabo at quasi delectus, fuga odit minima repudiandae
+                rem ut ratione perspiciatis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi odio et dolore. Quas culpa laborum
+                similique commodi saepe adipisci repudiandae quam illo! Labore illum nobis ratione harum tenetur tempore
+                magni.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo unde quisquam molestiae eligendi
+                excepturi veniam dolorem accusamus, adipisci explicabo at quasi delectus, fuga odit minima repudiandae
+                rem ut ratione perspiciatis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi odio et dolore. Quas culpa laborum
+                similique commodi saepe adipisci repudiandae quam illo! Labore illum nobis ratione harum tenetur tempore
+                magni.
+            </p>
+        </div>
+        <div class="blog-post">
+            <h1 class="blog-title">Blog Post 3</h1>
+            <p class="blog-p">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo unde quisquam molestiae eligendi
+                excepturi veniam dolorem accusamus, adipisci explicabo at quasi delectus, fuga odit minima repudiandae
+                rem ut ratione perspiciatis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi odio et dolore. Quas culpa laborum
+                similique commodi saepe adipisci repudiandae quam illo! Labore illum nobis ratione harum tenetur tempore
+                magni.
+        
+            </p>
+            <p class="blog-p">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo unde quisquam molestiae eligendi
+                excepturi veniam dolorem accusamus, adipisci explicabo at quasi delectus, fuga odit minima repudiandae
+                rem ut ratione perspiciatis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi odio et dolore. Quas culpa laborum
+                similique commodi saepe adipisci repudiandae quam illo! Labore illum nobis ratione harum tenetur tempore
+                magni.
+        
+            </p>
+            <p class="blog-p">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo unde quisquam molestiae eligendi
+                excepturi veniam dolorem accusamus, adipisci explicabo at quasi delectus, fuga odit minima repudiandae
+                rem ut ratione perspiciatis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi odio et dolore. Quas culpa laborum
+                similique commodi saepe adipisci repudiandae quam illo! Labore illum nobis ratione harum tenetur tempore
+                magni.
+        
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
