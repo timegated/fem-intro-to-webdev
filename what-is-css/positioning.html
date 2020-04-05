@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .absolute-box {
+            width: 350px;
+            height: 350px;
+            border: 1px solid lightgrey;
+            position: absolute;
+            top: 1px;
+            right: 1px;
+        }
+        .fixed-box {
+            width: 350px;
+            height: 350px;
+            border: 1px solid lightgreen;
+            position: fixed;
+            top: 50%;
+            right: 50%;           
+        }
+        .relative-box {
+            width: 350px;
+            height: 350px;
+            border: 1px solid orange;
+            position: relative;
+            top: 50%;
+            left: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="absolute-box">
+        <h4>Absolute Box</h4>
+    </div>
+    <div class="fixed-box">
+        <h4>Fixed Box</h4>
+    </div>
+    <div class="relative-box">
+        <h4>Relative Box</h4>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *,
+        *:after,
+        *:before {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        } 
+        #box {
+            background: lightgrey;
+        }
+
+        div {
+            background: lightgray;
+        }
+        
+        .box-1 {
+            background: green;
+            margin: 5rem 0 0 5rem;
+            width: 350px;
+            height: 350px;
+            border: 1px solid lawngreen;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div id="box" class="box-1"></div>
+    <div class="box-1"></div>
+</body>
+
+</html>
