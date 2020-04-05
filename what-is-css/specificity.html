@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        * {
+  box-sizing: border-box;
+}
+
+#special {
+  background-color: purple;
+}
+
+div {
+  height: 100px;
+  width: 200px;
+  border: 2px solid red;
+  background-color: orange;
+  margin: 50px 10px 20px 30px;
+  padding: 10px 20px;
+}
+
+.another-class {
+  background-color: pink;
+}
+
+.this-class {
+  background-color: green;
+}
+
+.this-class.another-class {
+  background-color: blue;
+}
+
+.parent-div {
+  background-color: inherit;
+  border-color: transparent;
+  height: auto;
+}
+
+.parent-div div {
+  background-color: cyan;
+}
+    </style>
+</head>
+<body>
+    <div class="parent-div">
+        <div>No class.</div>
+        <div class="this-class">One class</div>
+        <div>Also no class</div>
+        <div class="this-class another-class">Two classes</div>
+        <div style="background-color:pink" id="special" class="this-class another-class">Two classes + id</div>
+    </div>
+</body>
+</html>
